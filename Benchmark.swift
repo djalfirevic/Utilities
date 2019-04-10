@@ -3,8 +3,7 @@ import QuartzCore
 
 public class Benchmark {
     
-    public static func measureBlock(closure: () -> Void) -> CFTimeInterval {
-        let runCount = 10
+    public static func measureBlock(runCount: Int = 1, closure: () -> Void) -> CFTimeInterval {
         var executionTimes = Array<Double>(repeating: 0.0, count: runCount)
         
         for i in 0..<runCount {
@@ -19,8 +18,7 @@ public class Benchmark {
         return (executionTimes.reduce(0, +)) / Double(runCount)
     }
     
-    public static func measureBlock(closure: () -> Void) -> TimeInterval {
-        let runCount = 10
+    public static func measureBlock(runCount: Int = 1, closure: () -> Void) -> TimeInterval {
         var executionTimes = Array<Double>(repeating: 0.0, count: runCount)
         
         for i in 0..<runCount {
