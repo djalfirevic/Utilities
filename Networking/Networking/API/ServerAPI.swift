@@ -17,25 +17,29 @@ extension ServerAPI: API {
 //            completion(result)
 //        }
         
-        URLSession.shared.request(Endpoint.posts) { (data, response, error) in
-            do {
-                if let data = data {
-                    let decoder = JSONDecoder()
-                    decoder.keyDecodingStrategy = .convertFromSnakeCase
-                    
-                    let object = try decoder.decode([Post].self, from: data)
-                    
-                    DispatchQueue.main.async {
-                        completion(.success(object))
-                    }
-                }
-            } catch {
-                DispatchQueue.main.async {
-                    completion(.failure(error))
-                }
-                
-                print("Decoding error: \(error)")
-            }
+//        URLSession.shared.request(Endpoint.posts) { (data, response, error) in
+//            do {
+//                if let data = data {
+//                    let decoder = JSONDecoder()
+//                    decoder.keyDecodingStrategy = .convertFromSnakeCase
+//
+//                    let object = try decoder.decode([Post].self, from: data)
+//
+//                    DispatchQueue.main.async {
+//                        completion(.success(object))
+//                    }
+//                }
+//            } catch {
+//                DispatchQueue.main.async {
+//                    completion(.failure(error))
+//                }
+//
+//                print("Decoding error: \(error)")
+//            }
+//        }
+        
+        URLSession.shared.request(Endpoint.posts) { result in
+            completion(result)
         }
     }
     
