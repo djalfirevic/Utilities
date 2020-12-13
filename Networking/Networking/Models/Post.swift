@@ -8,6 +8,9 @@
 import Foundation
 
 struct Post: Codable {
+    
+    // MARK: - Properties
     let id: Int
     let title: String
+    
 }

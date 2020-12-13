@@ -21,6 +21,7 @@
 		1AD1385C25862831008B6F09 /* posts.json in Resources */ = {isa = PBXBuildFile; fileRef = 1AD1385B25862831008B6F09 /* posts.json */; };
 		1AD1386125862923008B6F09 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD1386025862923008B6F09 /* DataManager.swift */; };
 		1AD13866258629D9008B6F09 /* RestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD13865258629D9008B6F09 /* RestManager.swift */; };
+		1AD138792586304C008B6F09 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD138782586304C008B6F09 /* Endpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		1AD1385B25862831008B6F09 /* posts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = posts.json; sourceTree = "<group>"; };
 		1AD1386025862923008B6F09 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		1AD13865258629D9008B6F09 /* RestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestManager.swift; sourceTree = "<group>"; };
+		1AD138782586304C008B6F09 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 				1AD138502586279E008B6F09 /* ServerAPI.swift */,
 				1AD13855258627D2008B6F09 /* MockAPI.swift */,
 				1AD1386025862923008B6F09 /* DataManager.swift */,
+				1AD138782586304C008B6F09 /* Endpoint.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AD138102586266F008B6F09 /* ViewController.swift in Sources */,
+				1AD138792586304C008B6F09 /* Endpoint.swift in Sources */,
 				1AD1384325862705008B6F09 /* API.swift in Sources */,
 				1AD138512586279E008B6F09 /* ServerAPI.swift in Sources */,
 				1AD1386125862923008B6F09 /* DataManager.swift in Sources */,
